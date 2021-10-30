@@ -6,7 +6,7 @@ def int_sqrt(n: int) -> int:
     if n < 0:
         raise ValueError("n must be >= 0")
 
-    # Use expontial method to find the square root:
+    # Use exponential method to find the square root:
     sqrt = n ** (1/2)
     # Convert any float to int closest to zero:
     return int(sqrt)

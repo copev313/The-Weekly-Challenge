@@ -1,6 +1,6 @@
 # The-Weekly-Challenge
  
- A collection of solution attempts at the [The Weekly Challenge](https://theweeklychallenge.org/).
+ A collection of solution attempts at [The Weekly Challenge](https://theweeklychallenge.org/).
 
 
 ## Tests
@@ -13,7 +13,11 @@
 
 ## Progress Tracker
 
-Challenge  | Python             | README
----------- | ------------       | ------
-**133**    | CH1✔️  CH2✔️      | 
+| Challenge                                                                       | Python       | README |
+| ----------                                                                      | ------------ | ------ |
+| **[136](https://theweeklychallenge.org/blog/perl-weekly-challenge-136/)**       |              |        |
+| **[135](https://theweeklychallenge.org/blog/perl-weekly-challenge-135/)**       |              |        |
+| **[134](https://theweeklychallenge.org/blog/perl-weekly-challenge-134/)**       |              |        |
+| **[133](https://theweeklychallenge.org/blog/perl-weekly-challenge-133/)**       | CH1✔️ CH2⏳      | [in progress](.\133\python\README.md)      |
+
 
