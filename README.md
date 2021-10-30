@@ -4,7 +4,11 @@
 
 
 ## Tests
- I have chosen to use pytest to write test suites for my solutions. These suites can be ran using the following command in numbered challenge directory: `pytest`.
+ I have chosen to use pytest to write test suites for my solutions. These suites can be ran using the following command in the numbered challenge directory:
+
+ ```bash
+ pytest
+ ```
 
 
 ## Progress Tracker
