@@ -2,7 +2,7 @@
 def prime_factors(n: int) -> list:
     """Returns a list of prime factors of n."""
     # Input validation:
-    if n < 0:
+    if n <= 0:
         raise ValueError("n must be a positive integer")
     
     factors = []
@@ -28,7 +28,7 @@ def prime_factors(n: int) -> list:
 def smith_number(n: int) -> bool:
     """Returns whether a given integer is a Smith number."""
     # Input validation:
-    if n < 0:
+    if n <= 0:
         raise ValueError("n must be a positive integer")
 
     # Calculate the sum of n's digits:
