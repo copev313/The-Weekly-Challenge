@@ -4,7 +4,7 @@
 
 Write a script to generate first 5 `Pandigital Numbers` in base 10.
 
-As per the wikipedia, it says:
+As per the [wikipedia](https://en.wikipedia.org/wiki/Pandigital_number), it says:
 
 > A pandigital number is an integer that in a given base has among its significant digits each digit used in the base at least once.
 
@@ -20,7 +20,7 @@ As per the wikipedia, it says:
 ---
 ## Task 2 > Distinct Terms Count
 
-You are given 2 positive numbers, $m and $n.
+You are given 2 positive numbers, `$m` and `$n`.
 
 Write a script to generate multiplcation table and display count of distinct terms.
 
