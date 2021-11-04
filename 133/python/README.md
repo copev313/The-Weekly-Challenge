@@ -43,7 +43,7 @@ def int_sqrt(n: int) -> int:
 
 ```
 
-
+---
 ## Task 2 > Smith Number
 
 Write a script to generate the first 10 `Smith Numbers` in base 10.
