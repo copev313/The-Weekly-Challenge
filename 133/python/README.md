@@ -28,15 +28,17 @@ Output: 10
 
 ### Solution
 
+To avoid using the built-in function that comes with the `math` library, I implemented some fairly simple arithmetic to calculate the square root.
+The best take away from this demonstration is that Python's `int` parsing automatically rounds down to the nearest integer (closest to zero). 
+Since all expected inputs are positive integers, we need not worry about handling the negative cases.
+
 ```python
 def int_sqrt(n: int) -> int:
     """Return the integer square root of n."""
 
-    # [CASE] n is negative:
     if n < 0:
         raise ValueError("n must be >= 0")
 
-    # Use exponential method to find the square root:
     sqrt = n ** (1/2)
     # Convert any float to int closest to zero:
     return int(sqrt)
@@ -58,7 +60,7 @@ According to Wikipedia:
 
 You'll see I split the task into several parts and made use of some helper functions. 
 For the sake of simplicity, I did not implement the ability to handle bases other than 10.
-To see more comments on the code's thought processes, check out the `ch2.py` file.
+To see more comments on the code's thought process, check out the [ch2.py](133\python\ch2.py) file .
 
 ```python
 def prime_factors(n: int) -> list:
@@ -119,4 +121,3 @@ def generate_smith_numbers(n: int) -> list:
     return results
 
 ```
-
