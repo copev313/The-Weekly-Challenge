@@ -24,7 +24,7 @@ def print_results(matrix: list) -> None:
     """Print the results."""
     m = len(matrix)
     n = len(matrix[0])
-    print(f"\nInput: m = {m}, n = {n}")
+    print(f"\nInput: $m = {m}, $n = {n}")
     print(f"Output:\n")
     
     # Handle strings row by row:
@@ -59,4 +59,4 @@ def print_results(matrix: list) -> None:
     print(f"Count: {len(distinct_terms)}")
 
 
-#print(print_results(gen_mult_matrix(12, 12)))
+#print(print_results(gen_mult_matrix(3, 3)))
