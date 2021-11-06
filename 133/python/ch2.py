@@ -4,7 +4,7 @@ def prime_factors(n: int) -> list:
     # Input validation:
     if n <= 0:
         raise ValueError("n must be a positive integer")
-    
+
     factors = []
     test_prime = 2
 
@@ -22,7 +22,6 @@ def prime_factors(n: int) -> list:
         factors.append(n)
 
     return factors
-
 
 
 def smith_number(n: int) -> bool:
@@ -53,7 +52,6 @@ def smith_number(n: int) -> bool:
     return False
 
 
-
 def generate_smith_numbers(n: int) -> list:
     """Returns a list of the first n Smith numbers."""
     # Input validation:
@@ -71,4 +69,3 @@ def generate_smith_numbers(n: int) -> list:
         incr += 1
 
     return results
-

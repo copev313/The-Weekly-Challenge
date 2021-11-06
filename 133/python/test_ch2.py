@@ -1,5 +1,5 @@
 import pytest
-from ch2 import prime_factors, smith_number, generate_smith_numbers
+from ch2 import generate_smith_numbers, prime_factors, smith_number
 
 
 class TestPrimeFactorization:
@@ -26,25 +26,25 @@ class TestPrimeFactorization:
 
 class TestSmithNumber:
     def test_all_trues(self):
-        assert smith_number(4) == True
-        assert smith_number(22) == True
-        assert smith_number(121) == True
-        assert smith_number(346) == True
-        assert smith_number(1086) == True
+        assert smith_number(4) is True
+        assert smith_number(22) is True
+        assert smith_number(121) is True
+        assert smith_number(346) is True
+        assert smith_number(1086) is True
 
     def test_all_falses(self):
-        assert smith_number(5) == False
-        assert smith_number(23) == False
-        assert smith_number(122) == False
-        assert smith_number(347) == False
-        assert smith_number(1087) == False
+        assert smith_number(5) is False
+        assert smith_number(23) is False
+        assert smith_number(122) is False
+        assert smith_number(347) is False
+        assert smith_number(1087) is False
 
     def test_mixed_results(self):
-        assert smith_number(3) == False
-        assert smith_number(94) == True
-        assert smith_number(200) == False
-        assert smith_number(517) == True
-        assert smith_number(895) == True
+        assert smith_number(3) is False
+        assert smith_number(94) is True
+        assert smith_number(200) is False
+        assert smith_number(517) is True
+        assert smith_number(895) is True
 
     def test_input_validation(self):
         with pytest.raises(ValueError):
@@ -56,7 +56,7 @@ class TestSmithNumber:
 class TestGenerateSmithNumbers:
     def test_zero(self):
         assert generate_smith_numbers(0) == []
-    
+
     def test_input_validation(self):
         with pytest.raises(ValueError):
             generate_smith_numbers(-1)
@@ -70,4 +70,3 @@ class TestGenerateSmithNumbers:
                                               166, 202, 265, 274, 319, 346,
                                               355, 378, 382, 391, 438, 454,
                                               483]
-
