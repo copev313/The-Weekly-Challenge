@@ -12,14 +12,14 @@ class TestIsPandigital:
             is_pandigital()
 
     def test_small_pandigital(self):
-        assert is_pandigital(123) == False
-        assert is_pandigital(12345678) == False
-        assert is_pandigital(0) == False
-        assert is_pandigital(1023456789) == True
+        assert is_pandigital(123) is False
+        assert is_pandigital(12345678) is False
+        assert is_pandigital(0) is False
+        assert is_pandigital(1023456789) is True
 
     def test_large_pandigital(self):
-        assert is_pandigital(9876543210) == True
-        assert is_pandigital(98765432109876543210) == True
+        assert is_pandigital(9876543210) is True
+        assert is_pandigital(98765432109876543210) is True
 
 
 class TestPandigitalNums:
@@ -27,7 +27,7 @@ class TestPandigitalNums:
         assert pandigital_nums(0) == []
         with pytest.raises(ValueError):
             pandigital_nums(-1)
-    
+
     def test_first_5_numbers(self):
         pand_numbers = [1023456789,
                         1023456798,

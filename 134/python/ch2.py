@@ -1,5 +1,4 @@
 
-
 def gen_mult_matrix(row: int, col: int) -> list:
     """Generate a multiplication matrix of size row x col."""
     if row <= 0 or col <= 0:
@@ -19,14 +18,13 @@ def gen_mult_matrix(row: int, col: int) -> list:
     return matrix
 
 
-
 def print_results(matrix: list) -> None:
     """Print the results."""
     m = len(matrix)
     n = len(matrix[0])
     print(f"\nInput: $m = {m}, $n = {n}")
-    print(f"Output:\n")
-    
+    print("Output:\n")
+
     # Handle strings row by row:
     first_row = " x | " + "  ".join([str(x) for x in range(1, n + 1)])
     second_row = "---+" + "---" * n
@@ -40,7 +38,7 @@ def print_results(matrix: list) -> None:
                 nth_row += " "
 
             nth_row += f"{x} "
-                
+
         generated_rows += nth_row + "\n"
 
     print(first_row)
@@ -59,4 +57,4 @@ def print_results(matrix: list) -> None:
     print(f"Count: {len(distinct_terms)}")
 
 
-#print(print_results(gen_mult_matrix(3, 3)))
+# print(print_results(gen_mult_matrix(3, 3)))

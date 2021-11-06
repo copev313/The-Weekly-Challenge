@@ -1,5 +1,4 @@
 
-
 def is_pandigital(num: int) -> bool:
     """Returns whether a number is a pandigital number in base 10."""
     # Input validation:
@@ -14,7 +13,6 @@ def is_pandigital(num: int) -> bool:
     num_as_string = str(num)
 
     return set(num_as_string) == set(digits_list)
-
 
 
 def pandigital_nums(n: int) -> list:
