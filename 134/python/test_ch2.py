@@ -12,7 +12,7 @@ class TestGenMultMatrix:
             gen_mult_matrix(0.1, 10)
         with pytest.raises(ValueError):
             gen_mult_matrix(10, -10)
-    
+
     def test_single_row(self):
         assert gen_mult_matrix(1, 5) == [[1, 2, 3, 4, 5]]
         assert gen_mult_matrix(10, 10)[4] == [5, 10, 15, 20, 25, 30,
@@ -30,5 +30,5 @@ class TestGenMultMatrix:
 
 class TestPrintResults:
     def test_expected_return(self):
-        assert print_results(gen_mult_matrix(5, 5)) == None
-        assert print_results(gen_mult_matrix(3, 2)) == None
+        assert print_results(gen_mult_matrix(5, 5)) is None
+        assert print_results(gen_mult_matrix(3, 2)) is None

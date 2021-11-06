@@ -1,0 +1,8 @@
+[flake8]
+# ignore = D203
+exclude =
+    .git, __pycache__, ./venv
+max-complexity = 10
+per-file-ignores =
+    # leave my comparisons alone...
+    #./133/test_ch2.py: E712
